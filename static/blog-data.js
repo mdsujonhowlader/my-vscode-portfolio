@@ -15,7 +15,7 @@ The syntax-highlighted code blocks on the home page are generated from JSON data
 For the GitHub integration, I fetch profile and repository data directly from the GitHub API with Next.js server components and 1-hour revalidation. No auth token needed for public data.
 
 The whole project took about two weeks of evening work. It taught me more about CSS, React Server Components, and Next.js App Router than any tutorial ever could.`,
-    image: "/ai.jpg",
+    image: "/vscodetheme.png",
     date: "2025-10-10",
   },
   {
@@ -36,7 +36,7 @@ Context providers like my ThemeContext still need to be client components, but I
 Server Components also changed how I think about data fetching. Instead of coordinating multiple useEffect calls and managing loading states, I just await the data directly in the component. Next.js handles the streaming and loading boundaries.
 
 The performance improvement was noticeable. My portfolio loads faster, has less JavaScript, and feels more responsive. The tradeoff is a mental model shift, but once it clicks, you won't want to go back.`,
-    image: "/app.jpg",
+    image: "/server-component.png",
     date: "2025-09-28",
   },
   {
@@ -81,7 +81,7 @@ One thing that tripped me up was the font configuration. In v4, you set the font
 This bridges Next.js font optimization with Tailwind's font utilities.
 
 Overall, Tailwind v4 feels like the framework matured. Less config, faster builds, and CSS-native theming make it a clear upgrade.`,
-    image: "/agency.png",
+    image: "/tailwindcss.png",
     date: "2025-09-15",
   },
   {
@@ -120,7 +120,7 @@ The key insight is the separation of concerns:
 Adding a new theme is just adding a new [data-theme] block in CSS and a new entry in the theme array. No JavaScript changes needed.
 
 This pattern scales well too. I added a light theme variant in minutes, and it works identically because the CSS custom properties abstract away the color values entirely.`,
-    image: "/ai.jpg",
+    image: "/darkmode.png",
     date: "2025-08-20",
   },
   {
@@ -160,7 +160,7 @@ The GitHub API allows 60 requests per hour without authentication. For a portfol
 Error handling matters here. If the API is rate-limited or the username is wrong, the page should fail gracefully rather than showing a broken layout. I wrap the fetch calls in try/catch and show a fallback message.
 
 The component side is clean because the data is already resolved by the time it renders. No loading spinners, no useEffect coordination — just props with data ready to go.`,
-    image: "/app.jpg",
+    image: "/githubrepo.png",
     date: "2025-08-05",
   },
   {
@@ -183,7 +183,7 @@ Reading documentation became a habit. MDN, React docs, Next.js docs — they exi
 The most unexpected lesson was that soft skills matter as much as technical ones. Explaining your code, asking good questions, and giving constructive feedback are skills that make you a better developer than any framework knowledge.
 
 Year two starts now, and I'm excited about what's next.`,
-    image: "/agency.png",
+    image: "/lessonmydev.png",
     date: "2025-07-15",
   },
 ];
