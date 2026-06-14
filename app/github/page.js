@@ -3,12 +3,12 @@ import Repository from "@/components/Repository";
 import { getGithubProfile, getSelectedRepos } from "@/queries/query";
 
 export default async function GithubPage() {
-  const profile = await getGithubProfile("SujonHiro");
+  const profile = await getGithubProfile("mdsujonhowlader");
 
-  const selected = await getSelectedRepos("SujonHiro", [
-    "blogSite_FullStack",
-    "book_managementAPI",
-    "daily-weather",
+  const selected = await getSelectedRepos("mdsujonhowlader", [
+    "the-commerce",
+    "bideshgami",
+    "ttr-next",
   ]);
   return (
     <>

@@ -15,9 +15,9 @@ export default function AboutMe() {
           with JavaScript / TypeScript and the React ecosystem.
         </p>
         <p className="leading-relaxed text-center md:text-left">
-          I'm focused on frontend development with React, but you'll also find
-          me working with Node.js, MongoDB, and Express while building the
-          backend for my personal projects.
+          I'm focused on Backend development with Node js, but you'll also find
+          me working with Frontend like React,Next.js, MongoDB, and Express while building the
+          fullstack for my personal projects.
         </p>
       </div>
 

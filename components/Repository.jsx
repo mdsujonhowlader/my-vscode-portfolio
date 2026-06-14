@@ -28,7 +28,11 @@ export default function Repository({ selectedRepo }) {
               {selectedRepo.watchers}
             </span>
           </div>
-          <Link className="mt-2 text-[var(--color-accent)] size-4" href="/">
+          <Link
+            className="mt-2 text-[var(--color-accent)] size-4"
+            href={`https://github.com/mdsujonhowlader/${selectedRepo.name}`}
+            target="_blank"
+          >
             <Github />
           </Link>
         </div>

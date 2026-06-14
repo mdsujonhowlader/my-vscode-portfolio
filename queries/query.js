@@ -9,7 +9,7 @@ export async function getGithubProfile(username) {
 }
 
 export async function getSelectedRepos(username, repoNames = []) {
-  const res = await fetch(`https://api.github.com/users/${username}/repos`, {
+  const res = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`, {
     next: { revalidate: 3600 },
   });
 
