@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const codeLines = [
   { code: "const HomePage = () => {", color: "pink" },
@@ -47,6 +47,7 @@ const CodeTextColorStyle = {
 
 export default function HomeSection() {
   const [activeLineIndex, setActiveLineIndex] = useState(0);
+  const lineRef=useRef([])
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -57,12 +58,22 @@ export default function HomeSection() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(()=>{
+      lineRef.current[activeLineIndex]?.scrollIntoView({
+        behavior:"smooth",
+        block:"nearest"
+      })
+  },[activeLineIndex])
+
   return (
-    <div className="p-2 border border-slate-800 rounded-2xl shadow-lg overflow-y-auto ">
-      <pre className="relative h-[300px] overflow-y-scroll text-sm rounded-xl shadow-sm font-mono p-3">
+    <div className="p-2 border border-slate-800 rounded-2xl shadow-lg  ">
+      <pre className="relative h-[300px] overflow-y-auto text-sm rounded-xl shadow-sm font-mono p-3">
         {codeLines.map((line, index) => (
           <div
             key={index}
+            ref={(el)=>{
+              lineRef.current[index]=el
+            }}
             className={`flex ${
               index === activeLineIndex ? "bg-slate-700/20 rounded-sm " : ""
             }`}
