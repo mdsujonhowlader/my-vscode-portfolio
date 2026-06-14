@@ -12,24 +12,24 @@ export default function Github({ profile }) {
             className="size-28 object-cover rounded-full"
             width={1000}
             height={800}
-            alt={profile.name}
+            alt={profile?.name || ""}
           />
         </div>
         <div>
           <h2 className="text-white text-2xl font-medium inline-flex gap-2 items-center mt-10">
             <AtSign size="22" className="text-[var(--color-accent)] stroke-3" />{" "}
-            {profile.login}
+            {profile?.login}
           </h2>
           <div className="h-[1.5px] bg-[var(--color-accent)] w-10 ml-auto" />
         </div>
         <div className="mt-15 flex items-center gap-10">
           <h2 className="inline-flex items-center gap-2 text-[var(--color-accent)]">
             <BookMarked size="15" />
-            {profile.public_repos} repositories
+            {profile?.public_repos} repositories
           </h2>
           <h2 className="inline-flex items-center gap-2 text-[var(--color-accent)]">
             <FollowerIcon />
-            {profile.followers} followers
+            {profile?.followers} followers
           </h2>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import Blog from "@/components/Blog";
-import { blogData } from "@/temporary/blog-data";
+import { blogData } from "@/static/blog-data";
 export default function BlogPage() {
   return (
     <>

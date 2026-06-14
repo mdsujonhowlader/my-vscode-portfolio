@@ -1,5 +1,5 @@
 "use client";
-import { fileTreeData } from "@/temporary/fileTreeData";
+import { fileTreeData } from "@/static/fileTreeData";
 import {
   ChevronsLeftRight,
   CircleUser,

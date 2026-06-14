@@ -1,4 +1,4 @@
-import { menu } from "@/temporary/manus";
+import { menu } from "@/static/manus";
 import { Ellipsis, Minus, SearchIcon, SquaresExclude, X } from "lucide-react";
 import Link from "next/link";
 
