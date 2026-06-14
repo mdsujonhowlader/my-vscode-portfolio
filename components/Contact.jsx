@@ -5,7 +5,7 @@ const contactInfo = [
     id: 1,
     social: "facebook",
     link: "sujonhowlader01",
-    href: "https://www.facebook.com",
+    href: "https://www.facebook.com/mdsujon.howlader.165470",
   },
   {
     id: 2,
@@ -17,13 +17,13 @@ const contactInfo = [
     id: 3,
     social: "github",
     link: "sujonhiro",
-    href: "https://github.com/SujonHiro",
+    href: "https://github.com/mdsujonhowlader",
   },
   {
     id: 4,
     social: "linkedin",
     link: "sujonhowlader",
-    href: "https://www.linkedin.com/in/sujon-howlader-6442b5198",
+    href: "https://www.linkedin.com/in/sujon-howlader",
   },
   {
     id: 5,

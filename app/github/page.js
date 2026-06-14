@@ -8,7 +8,7 @@ export default async function GithubPage() {
   const selected = await getSelectedRepos("mdsujonhowlader", [
     "the-commerce",
     "bideshgami",
-    "ttr-next",,
+    "ttr-next",
     "socialAdda"
   ]);
   return (

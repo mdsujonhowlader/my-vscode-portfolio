@@ -19,7 +19,7 @@ export default function Blog({ blog }) {
 
       <div className="p-4 flex flex-col gap-2">
         <Link
-          href="/"
+          href={`/blogs/${blog.id}`}
           className="text-xl font-semibold text-[var(--color-accent)] line-clamp-1 hover:underline underline-offset-2 transition-all duration-300"
         >
           {blog.title}
